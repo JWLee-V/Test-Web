@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Test-Web 방명록</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Test-Web 방명록</h1>
+    <p class="sub">이름과 메시지를 남기면 아래 목록에 추가됩니다. (이 브라우저에 저장)</p>
+
+    <form id="form">
+      <input id="name" type="text" placeholder="이름" maxlength="20" required>
+      <input id="message" type="text" placeholder="메시지" maxlength="100" required>
+      <button type="submit">남기기</button>
+    </form>
+
+    <p id="greeting" class="greeting" hidden></p>
+
+    <div class="list-head">
+      <h2>남긴 글 <span id="count">0</span>개</h2>
+      <button id="clear" type="button" class="link">전체 지우기</button>
+    </div>
+    <ul id="list"></ul>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
